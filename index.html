@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/myjs.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Kalam&family=Solitreo&display=swap");
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <h1>My Task Board</h1>
+        <div class="main">
+            <label class="form-label" for="taskInfo">Enter your task:</label>
+            <br/>
+            <input
+                type="text"
+                placeholder="Enter task name"
+                class="taskName"
+                required
+                id="taskName"
+            />
+            <br /><br />
+            <label class="form-label" for="taskInfo">Enter Finish Date:</label>
+            <br/>
+            <input
+                type="date"
+                placeholder="Enter task date"
+                class="taskDate"
+                required
+                id="taskDate"
+                />
+            <br /><br />
+            <label class="form-label" for="taskInfo">Enter Finish Time:</label>
+            <br/>
+            <input
+                type="time"
+                placeholder="Enter task time"
+                class="taskTime"
+                required
+                id="taskTime"
+            />
+            <br /><br />
+            <input type="button" value="Add New Task" class="submit" onclick="handleData()" />
+            <input type="reset" value="Reset" class="reset" />
+        </div>
+        <div id="taskList"></div>
+    </form>
+</body>
+</html>
